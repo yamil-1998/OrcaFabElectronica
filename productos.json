@@ -64,12 +64,11 @@
   {
     "id": 6,
     "titulo": "SOPORTE PARA CELULAR",
-    "precio": "$12.50",
+    "precio": "Bs 20",
     "categoria": "Impresion 3D",
     "disponible": true,
     "imagen": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500",
     "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmszbzA0ZHByYm50NmN6Y3YwYm9paXpsbmd5NTh6ZzVpY2Z6eW9pOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d3mlE7uhX8KFgEmY/giphy.gif",
-"descripcion": "Mantén tu espacio de trabajo impecable. Este organizador cuenta con múltiples compartimentos para bolígrafos y notas.",
     "imagenes_extra": []
   }
 ]
