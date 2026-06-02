@@ -171,22 +171,31 @@ main h2 { text-align: center; margin-bottom: 30px; }
 /* Cara Posterior */
 .cara-posterior {
     transform: rotateY(180deg);
-    padding: 15px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    height: 100%;
+}
+
+.gif-container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .gif-container img {
     width: 100%;
-    height: 180px;
+    height: 100%;
     object-fit: cover;
-    border-radius: 10px;
 }
 
 .galeria-extra {
     display: flex;
-    gap: 5px;
+    gap: 4px;
     justify-content: center;
-    margin: 10px 0;
+    margin: 5px 0;
 }
 
 .galeria-extra img {
@@ -194,6 +203,14 @@ main h2 { text-align: center; margin-bottom: 30px; }
     height: 50px;
     object-fit: cover;
     border-radius: 5px;
+}
+
+.botones-posterior {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    margin-top: auto;
 }
 
 /* Botón WhatsApp */
@@ -212,40 +229,6 @@ main h2 { text-align: center; margin-bottom: 30px; }
 }
 
 .btn-whatsapp:hover { background-color: #1ebe57; }
-
-/* RESPONSIVE: Forzado a 3 columnas en celulares */
-@media (max-width: 768px) {
-    header { flex-direction: column; gap: 10px; }
-    nav a { margin: 0 10px; font-size: 14px; }
-    
-    /* Configuración estricta de 3 columnas solicitada */
-    .productos-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 8px; /* Ajustamos el espacio para que quepan bien */
-    }
-    
-    .tarjeta-producto {
-        height: 260px; /* Reducimos la altura en celular para que no se deforme */
-    }
-
-    .cara-frontal img, .cara-posterior .gif-container img {
-        height: 110px;
-    }
-
-    .info-prod h3 { font-size: 11px; }
-    .precio { font-size: 12px; }
-    .status { font-size: 9px; padding: 2px 5px; }
-    .btn-whatsapp { font-size: 11px; padding: 6px; }
-    .galeria-extra img { width: 25px; height: 25px; }
-}
-/* Ajustes para ordenar los botones en la cara posterior */
-.botones-posterior {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    width: 100%;
-    padding: 0 5px;
-}
 
 /* Botón Saber Más */
 .btn-saber-mas {
@@ -315,7 +298,6 @@ main h2 { text-align: center; margin-bottom: 30px; }
 }
 .cerrar-modal:hover { color: var(--color-acento); }
 
-/* Layout interno del detalle */
 .modal-layout {
     display: flex;
     gap: 30px;
@@ -363,12 +345,43 @@ main h2 { text-align: center; margin-bottom: 30px; }
 .modal-info h2 { font-size: 24px; margin-bottom: 10px; }
 #modal-descripcion { color: #555; line-height: 1.6; margin: 15px 0; font-size: 15px; }
 
-/* Adaptación del Modal para Celulares */
+/* RESPONSIVE: Forzado a 3 columnas en celulares */
 @media (max-width: 768px) {
+    header { flex-direction: column; gap: 10px; }
+    nav a { margin: 0 10px; font-size: 14px; }
+    
+    .productos-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+    }
+    
+    .tarjeta-producto {
+        height: 290px;
+    }
+
+    .cara-frontal img, .gif-container {
+        height: 130px;
+    }
+    
+    .cara-posterior {
+        padding: 5px;
+    }
+
+    .info-prod h3 { font-size: 11px; line-height: 1.2; }
+    .precio { font-size: 12px; }
+    .status { font-size: 9px; padding: 2px 5px; }
+    
+    .btn-saber-mas, .btn-whatsapp { 
+        font-size: 10px; 
+        padding: 5px; 
+        border-radius: 6px;
+        gap: 4px;
+    }
+    .galeria-extra img { width: 20px; height: 20px; }
+
     .modal-contenido { padding: 20px; width: 95%; max-height: 90vh; overflow-y: auto; }
     .modal-layout { flex-direction: column; gap: 15px; }
     #modal-img-principal { height: 180px; }
     .modal-info h2 { font-size: 18px; }
     #modal-descripcion { font-size: 13px; }
-    .btn-saber-mas { font-size: 11px; padding: 6px; }
 }

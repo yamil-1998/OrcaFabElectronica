@@ -1,12 +1,13 @@
 [
   {
     "id": 1,
-    "titulo": "Lámpara de Madera Rústica",
-    "precio": "$45.00",
-    "categoria": "Madera",
+    "titulo": "Caja de ahorro",
+    "precio": "Bs 50",
+    "categoria": "MDF",
     "disponible": true,
     "imagen": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=500",
     "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3YwZzM0ZzBwY2dtYm14bndpNXN5YmJrZGR6NTh6eG90NWhpNHZyeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7E4F7df9R0Gsh7vG/giphy.gif",
+    "descripcion": "Mantén tu espacio de trabajo impecable. Este organizador cuenta con múltiples compartimentos para bolígrafos y notas.",
     "imagenes_extra": [
       "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=150",
       "https://images.unsplash.com/photo-1544816155-12df9643f363?w=150"
@@ -14,56 +15,61 @@
   },
   {
     "id": 2,
-    "titulo": "Organizador de Escritorio MDF",
-    "precio": "$18.50",
+    "titulo": "CAJA FUERTE PARA AHORRAR",
+    "precio": "Bs 50",
     "categoria": "MDF",
     "disponible": true,
     "imagen": "https://images.unsplash.com/photo-1513151233558-d860c5398176?w=500",
     "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2Z5dnd0YmxlZXg0Y3I4bnd6M3R5N3ZjdjFmdXpndWtlYTN2bTdzOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0HlIDvT81STQFE7m/giphy.gif",
+"descripcion": "Mantén tu espacio de trabajo impecable. Este organizador cuenta con múltiples compartimentos para bolígrafos y notas.",
     "imagenes_extra": [
       "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?w=150"
     ]
   },
   {
     "id": 3,
-    "titulo": "Kit de Robótica Arduino Nano",
-    "precio": "$32.00",
-    "categoria": "Electronica",
+    "titulo": "CAJA FUERTE PARA AHORRAR 2.0",
+    "precio": "Bs 50",
+    "categoria": "MDF",
     "disponible": true,
     "imagen": "https://images.unsplash.com/photo-1608564697171-20e1370731d2?w=500",
     "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmszbzA0ZHByYm50NmN6Y3YwYm9paXpsbmd5NTh6ZzVpY2Z6eW9pOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d3mlE7uhX8KFgEmY/giphy.gif",
+"descripcion": "Mantén tu espacio de trabajo impecable. Este organizador cuenta con múltiples compartimentos para bolígrafos y notas.",
     "imagenes_extra": []
   },
   {
     "id": 4,
-    "titulo": "Portarretratos Tallado a Mano",
-    "precio": "$22.00",
-    "categoria": "Madera",
-    "disponible": false,
+    "titulo": "CARRUSEL DE FOTOS",
+    "precio": "Bs 45",
+    "categoria": "MDF",
+    "disponible": true,
     "imagen": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=500",
     "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3YwZzM0ZzBwY2dtYm14bndpNXN5YmJrZGR6NTh6eG90NWhpNHZyeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7E4F7df9R0Gsh7vG/giphy.gif",
+"descripcion": "Mantén tu espacio de trabajo impecable. Este organizador cuenta con múltiples compartimentos para bolígrafos y notas.",
     "imagenes_extra": [
       "https://images.unsplash.com/photo-1517705008128-361805f42e86?w=150"
     ]
   },
   {
     "id": 5,
-    "titulo": "Letrero Luminoso MDF Personalizado",
-    "precio": "$29.99",
+    "titulo": "DISPENSADOR DE CIGARRO",
+    "precio": "Bs 45",
     "categoria": "MDF",
     "disponible": true,
     "imagen": "https://images.unsplash.com/photo-1563245372-f21724e3856d?w=500",
     "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3Z5dnd0YmxlZXg0Y3I4bnd6M3R5N3ZjdjFmdXpndWtlYTN2bTdzOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0HlIDvT81STQFE7m/giphy.gif",
+"descripcion": "Mantén tu espacio de trabajo impecable. Este organizador cuenta con múltiples compartimentos para bolígrafos y notas.",
     "imagenes_extra": []
   },
   {
     "id": 6,
-    "titulo": "Sensor de Humedad Automatizado",
+    "titulo": "SOPORTE PARA CELULAR",
     "precio": "$12.50",
-    "categoria": "Electronica",
-    "disponible": false,
+    "categoria": "Impresion 3D",
+    "disponible": true,
     "imagen": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=500",
     "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmszbzA0ZHByYm50NmN6Y3YwYm9paXpsbmd5NTh6ZzVpY2Z6eW9pOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d3mlE7uhX8KFgEmY/giphy.gif",
+"descripcion": "Mantén tu espacio de trabajo impecable. Este organizador cuenta con múltiples compartimentos para bolígrafos y notas.",
     "imagenes_extra": []
   }
 ]

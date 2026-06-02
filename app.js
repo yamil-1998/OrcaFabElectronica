@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function abrirDetallesProducto(prod) {
         document.getElementById("modal-titulo").innerText = prod.titulo;
         document.getElementById("modal-precio").innerText = prod.precio;
-        document.getElementById("modal-descripcion").innerText = prod.descripcion;
+        document.getElementById("modal-descripcion").innerText = prod.descripcion || "Sin descripción disponible.";
         document.getElementById("modal-img-principal").src = prod.imagen;
         document.getElementById("modal-whatsapp").href = `https://wa.me/59112345678?text=Hola!%20Vengo%20de%20ver%20los%20detalles%20de:%20${encodeURIComponent(prod.titulo)}`;
 
