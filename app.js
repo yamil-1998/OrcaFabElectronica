@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Al abrir, la imagen grande por defecto será la foto principal
         document.getElementById("modal-img-principal").src = prod.imagen;
         
-        document.getElementById("modal-whatsapp").href = `https://wa.me/59112345678?text=Hola!%20Vengo%20de%20ver%20los%20detalles%20de:%20${encodeURIComponent(prod.titulo)}`;
+        document.getElementById("modal-whatsapp").href = `https://wa.me/59176892254?text=Hola!%20Vengo%20de%20ver%20los%20detalles%20de:%20${encodeURIComponent(prod.titulo)}`;
 
         const galeria = document.getElementById("modal-galeria");
         galeria.innerHTML = ""; // Limpiamos miniaturas anteriores
