@@ -1,0 +1,374 @@
+/* Variables de Diseño */
+:root {
+    --color-principal: #111;
+    --color-acento: #ff4757;
+    --color-whatsapp: #25d366;
+    --color-fondo: #f1f2f6;
+    --fuente: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente);
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-principal);
+    scroll-behavior: smooth;
+}
+
+/* Header & Nav */
+header {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+header .logo span { color: var(--color-acento); }
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active { color: var(--color-acento); }
+
+/* Secciones Generales */
+.hero-section, .info-section {
+    padding: 80px 10%;
+    text-align: center;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1200') no-repeat center/cover;
+    color: #fff;
+    padding: 120px 5%;
+}
+
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+main h2 { text-align: center; margin-bottom: 30px; }
+
+/* Categorías */
+.categorias-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.btn-categoria {
+    padding: 10px 20px;
+    border: none;
+    background: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+}
+
+.btn-categoria:hover, .btn-categoria.active {
+    background: var(--color-acento);
+    color: #fff;
+}
+
+/* GRID DE PRODUCTOS: Adaptable */
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* EFECTO FLIP (Estructura de la Tarjeta) */
+.tarjeta-producto {
+    background-color: transparent;
+    height: 420px;
+    perspective: 1000px; /* Necesario para el efecto 3D */
+}
+
+.tarjeta-interna {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* Clase que se activará con JS al hacer click */
+.tarjeta-producto.volteada .tarjeta-interna {
+    transform: rotateY(180deg);
+}
+
+.cara-frontal, .cara-posterior {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cara Frontal */
+.cara-frontal img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.info-prod {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.info-prod h3 { font-size: 18px; margin-bottom: 5px; }
+.precio { color: var(--color-acento); font-weight: 700; font-size: 20px; }
+
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.disponible { background: #e3fcef; color: #00875a; }
+.agotado { background: #ffebe6; color: #de350b; }
+
+/* Cara Posterior */
+.cara-posterior {
+    transform: rotateY(180deg);
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.gif-container img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.galeria-extra {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.galeria-extra img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Botón WhatsApp */
+.btn-whatsapp {
+    background-color: var(--color-whatsapp);
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background 0.3s;
+}
+
+.btn-whatsapp:hover { background-color: #1ebe57; }
+
+/* RESPONSIVE: Forzado a 3 columnas en celulares */
+@media (max-width: 768px) {
+    header { flex-direction: column; gap: 10px; }
+    nav a { margin: 0 10px; font-size: 14px; }
+    
+    /* Configuración estricta de 3 columnas solicitada */
+    .productos-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px; /* Ajustamos el espacio para que quepan bien */
+    }
+    
+    .tarjeta-producto {
+        height: 260px; /* Reducimos la altura en celular para que no se deforme */
+    }
+
+    .cara-frontal img, .cara-posterior .gif-container img {
+        height: 110px;
+    }
+
+    .info-prod h3 { font-size: 11px; }
+    .precio { font-size: 12px; }
+    .status { font-size: 9px; padding: 2px 5px; }
+    .btn-whatsapp { font-size: 11px; padding: 6px; }
+    .galeria-extra img { width: 25px; height: 25px; }
+}
+/* Ajustes para ordenar los botones en la cara posterior */
+.botones-posterior {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    padding: 0 5px;
+}
+
+/* Botón Saber Más */
+.btn-saber-mas {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+.btn-saber-mas:hover { background-color: var(--color-acento); }
+
+/* VENTANA MODAL (PÁGINA DE DETALLES EMERGENTE) */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+
+.modal.mostrar {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-contenido {
+    background: #fff;
+    width: 90%;
+    max-width: 750px;
+    border-radius: 20px;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+}
+
+.cerrar-modal {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #888;
+    transition: color 0.3s;
+}
+.cerrar-modal:hover { color: var(--color-acento); }
+
+/* Layout interno del detalle */
+.modal-layout {
+    display: flex;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.modal-imagenes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#modal-img-principal {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.modal-galeria {
+    display: flex;
+    gap: 8px;
+}
+
+.modal-galeria img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border 0.3s;
+}
+
+.modal-galeria img:hover { border-color: var(--color-acento); }
+
+.modal-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal-info h2 { font-size: 24px; margin-bottom: 10px; }
+#modal-descripcion { color: #555; line-height: 1.6; margin: 15px 0; font-size: 15px; }
+
+/* Adaptación del Modal para Celulares */
+@media (max-width: 768px) {
+    .modal-contenido { padding: 20px; width: 95%; max-height: 90vh; overflow-y: auto; }
+    .modal-layout { flex-direction: column; gap: 15px; }
+    #modal-img-principal { height: 180px; }
+    .modal-info h2 { font-size: 18px; }
+    #modal-descripcion { font-size: 13px; }
+    .btn-saber-mas { font-size: 11px; padding: 6px; }
+}

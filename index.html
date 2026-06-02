@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Tienda Impactante</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">CREA<span>STORE</span></div>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Quiénes Somos</a>
+            <a href="#tienda" class="active">Tienda</a>
+            <a href="#saber-mas">Saber Más</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero-section">
+        <h1>Diseños Únicos e Innovación</h1>
+        <p>Encuentra los mejores productos en Madera, MDF y Electrónica.</p>
+    </section>
+
+    <main id="tienda">
+        <h2>Nuestro Catálogo</h2>
+        
+        <div class="categorias-container">
+            <button class="btn-categoria active" data-cat="Todos">Todos</button>
+            <button class="btn-categoria" data-cat="Madera">Madera</button>
+            <button class="btn-categoria" data-cat="MDF">MDF</button>
+            <button class="btn-categoria" data-cat="Electronica">Electrónica</button>
+        </div>
+
+        <div class="productos-grid" id="contenedor-productos">
+            </div>
+    </main>
+
+    <section id="nosotros" class="info-section">
+        <h2>Quiénes Somos</h2>
+        <p>Somos creadores apasionados combinando artesanía tradicional con tecnología de vanguardia.</p>
+    </section>
+
+    <section id="saber-mas" class="info-section">
+        <h2>Saber Más</h2>
+        <p>¿Tienes dudas sobre pedidos personalizados? Contáctanos directamente por nuestras redes.</p>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
