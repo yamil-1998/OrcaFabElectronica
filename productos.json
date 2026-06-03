@@ -20,7 +20,7 @@
     "categoria": "MDF",
     "disponible": true,
     "imagen": "./img/CajaFuerte1.webp",
-    "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM2Z5dnd0YmxlZXg0Y3I4bnd6M3R5N3ZjdjFmdXpndWtlYTN2bTdzOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0HlIDvT81STQFE7m/giphy.gif",
+    "gif": "./img/CAJA-FUERTE.gif",
 "descripcion": "Ahora ahorrar se convierte en algo divertido con esta caja totalmente funcional con combinacion, para ti, tus niños o como regalo.",
     "imagenes_extra": [
       "./img/CajaFuerte2.webp",
@@ -34,7 +34,7 @@
     "categoria": "MDF",
     "disponible": true,
     "imagen": "./img/CajaFuerte1.webp",
-    "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmszbzA0ZHByYm50NmN6Y3YwYm9paXpsbmd5NTh6ZzVpY2Z6eW9pOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d3mlE7uhX8KFgEmY/giphy.gif",
+    "gif": "./img/CAJA-FUERTE.gif",
 "descripcion": "Nueva caja fuerte, Ahora ahorrar se convierte en algo divertido con esta caja totalmente funcional con combinacion, para ti, tus niños o como regalo.",
     "imagenes_extra": [
       "./img/CajaFuerte2.webp",
@@ -48,7 +48,7 @@
     "categoria": "MDF",
     "disponible": true,
     "imagen": "./img/CarruselDeFotos1.webp",
-    "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3YwZzM0ZzBwY2dtYm14bndpNXN5YmJrZGR6NTh6eG90NWhpNHZyeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7E4F7df9R0Gsh7vG/giphy.gif",
+    "gif": "./img/CARRUSEL-FOTOS.gif",
 "descripcion": "Sorprende a tu pareja o pariente con este regalo, recuerda que esta es una base para dar el siguiente paso a tu imaginacion en la creatividad del carrusel.",
     "imagenes_extra": [
       "./img/CarruselDeFotos2.webp",
@@ -62,7 +62,7 @@
     "categoria": "MDF",
     "disponible": true,
     "imagen": "./img/DispensadorCigarro1.webp",
-    "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3Z5dnd0YmxlZXg0Y3I4bnd6M3R5N3ZjdjFmdXpndWtlYTN2bTdzOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0HlIDvT81STQFE7m/giphy.gif",
+    "gif": "./img/DISPENSADOR-CIGARRO.gif",
 "descripcion": "Necesitas un regalo ideal para aquella persona que desgustos entiende, llevatelo es perfecto, dispensa cigarros de forma elegante.",
     "imagenes_extra": [
 "./img/DispensadorCigarro2.webp"
@@ -75,7 +75,7 @@
     "categoria": "Impresion 3D",
     "disponible": true,
     "imagen": "./img/SoporteCelular6.webp",
-    "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmszbzA0ZHByYm50NmN6Y3YwYm9paXpsbmd5NTh6ZzVpY2Z6eW9pOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/d3mlE7uhX8KFgEmY/giphy.gif",
+    "gif": "./img/SOPORTE-CELULAR.gif",
 "descripcion": "Necesitas tener el Celular a la vista, esto es necesario para tener y ver que te llegan las notificaciones, soporte para celular con diferentes angulos de vision.",
     "imagenes_extra": [
 "./img/SoporteCelular1.webp",
@@ -92,7 +92,7 @@
     "categoria": "Impresion 3D",
     "disponible": true,
     "imagen": "./img/ManoParaVino1.webp",
-    "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3Z5dnd0YmxlZXg0Y3I4bnd6M3R5N3ZjdjFmdXpndWtlYTN2bTdzOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0HlIDvT81STQFE7m/giphy.gif",
+    "gif": "./img/SOPORTE-VINO.gif",
 "descripcion": "Eres amante de lo moderno, es ideal para ti, dale ese toque a tu centro de mesa con este soporte para vinos.",
     "imagenes_extra": [
 "./img/ManoParaVino2.webp",
@@ -106,7 +106,7 @@
     "categoria": "Impresion 3D",
     "disponible": true,
     "imagen": "./img/DispensadorPalillos1.webp",
-    "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3Z5dnd0YmxlZXg0Y3I4bnd6M3R5N3ZjdjFmdXpndWtlYTN2bTdzOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0HlIDvT81STQFE7m/giphy.gif",
+    "gif": "./img/DISPENSADOR-MONDADIENTES.gif",
 "descripcion": "Lo necesitas, despues de cada comida este dispensador de MONDADIENTES te entrega lo necesario, no dudes en consultar, puedes elegir los colores.",
     "imagenes_extra": [
 "./img/DispensadorPalillos2.webp",
@@ -120,7 +120,7 @@
     "categoria": "MDF",
     "disponible": true,
     "imagen": "./img/DispensadorCigarroPlatudo1.webp",
-    "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3Z5dnd0YmxlZXg0Y3I4bnd6M3R5N3ZjdjFmdXpndWtlYTN2bTdzOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0HlIDvT81STQFE7m/giphy.gif",
+    "gif": "./img/DISPENSADOR-CIGARRO.gif",
 "descripcion": "Necesitas un regalo ideal para aquella persona que desgustos entiende, llevatelo es perfecto, dispensa cigarros de forma elegante.",
     "imagenes_extra": [
 "./img/DispensadorCigarroPlatudo2.webp"
@@ -133,7 +133,7 @@
     "categoria": "MDF",
     "disponible": true,
     "imagen": "./img/DispensadorCigarroAvicola1.webp",
-    "gif": "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3Z5dnd0YmxlZXg0Y3I4bnd6M3R5N3ZjdjFmdXpndWtlYTN2bTdzOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0HlIDvT81STQFE7m/giphy.gif",
+    "gif": "./img/DISPENSADOR-CIGARRO.gif",
 "descripcion": "Para ese amigo Avicola es el regalo perfecto, dispensador de cigarros, no dudes en consultar.",
     "imagenes_extra": [
 "./img/DispensadorCigarroAvicola2.webp"
